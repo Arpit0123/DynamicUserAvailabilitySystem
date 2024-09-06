@@ -1,0 +1,30 @@
+Project Overview
+The Dynamic User Availability System is a web application that allows employees to manage their available time slots and enables administrators to view and manage the availability of all employees. The system uses JSP and Servlets for the web interface and Java for backend logic, with an Oracle database for data storage.
+
+Technologies Used:-
+
+Frontend: HTML, CSS, JSP
+Backend: Java, Servlets
+Database: Oracle Database
+Libraries: Oracle JDBC Driver
+
+File Breakdown
+
+JSP Files :-
+
+adminDashboard.jsp: Shows employee time slots to admins.
+employeeDashboard.jsp: Displays time slots for logged-in employees.
+login.jsp: Login form for user authentication.
+
+Servlets :-
+
+LoginServlet: Handles authentication and redirects based on role.
+AdminDashboardServlet: Retrieves and displays employee time slots to admins.
+EmployeeDashboardServlet: Retrieves and displays time slots for individual employees.
+
+Model Classes :-
+
+EmployeeTimeSlot: Represents employee time slots.
+TimeSlot: Represents individual employee time slots.
+TimeSlotDTO: Data Transfer Object for time slots.
+DBConnection: Manages database connections.
